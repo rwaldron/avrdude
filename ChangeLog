@@ -1,3 +1,7 @@
+2007-07-18 David A. Mellis <dam@mellis.org>
+
+	* configure.ac (AC_INIT): Changing version to avrdude-5.4-arduino.
+
 2007-05-16 Joerg Wunsch <j@uriah.heep.sax.de>
 
 	* configure.ac (AC_INIT): Bump version, releasing avrdude-5.4.
