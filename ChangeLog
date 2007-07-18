@@ -1,5 +1,10 @@
 2007-07-18 David A. Mellis <dam@mellis.org>
 
+	* stk500v2.c (stk500v2_getsync): Return if using an AVRISPmkII as
+	it might not respond to the sync attempts.
+
+2007-07-18 David A. Mellis <dam@mellis.org>
+
 	* configure.ac (AC_INIT): Changing version to avrdude-5.4-arduino.
 
 2007-05-16 Joerg Wunsch <j@uriah.heep.sax.de>

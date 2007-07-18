@@ -483,6 +483,10 @@ static int stk500v2_getsync(PROGRAMMER * pgm) {
   if (pgmtype == PGMTYPE_JTAGICE_MKII)
     return 0;
 
+  // my avrispmkii doesn't respond to the sync --dam@mellis.org
+  if (pgmtype == PGMTYPE_AVRISP_MKII)
+    return 0;
+
 retry:
   tries++;
 
