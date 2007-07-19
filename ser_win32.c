@@ -173,6 +173,16 @@ static void ser_open(char * port, long baud, union filedescriptor *fdp)
 				progname, port);
 		exit(1);
 	}
+
+	/* added by david a. mellis to reset the arduino */
+	printf("%s: ser_open(): setting dtr\n", progname);
+	if (!EscapeCommFunction (hComPort,SETDTR))
+	{
+		CloseHandle(hComPort);
+		fprintf(stderr, "%s: ser_open(): can't set dtr for \"%s\"\n",
+				progname, port);
+		exit(1);
+	}
 }
 
 
