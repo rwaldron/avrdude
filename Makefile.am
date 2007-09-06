@@ -136,6 +136,8 @@ libavrdude_a_SOURCES = \
 	usbasp.c \
 	usbasp.h \
 	usbdevs.h \
+	usbtiny.c \
+	usbtiny.h \
 	usb_libusb.c \
 	update.h \
 	update.c
